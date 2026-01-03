@@ -23,7 +23,7 @@ export async function PUT(request) {
       {
         method: "PUT",
         headers: {
-          "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_TOKEN,
+          "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -63,7 +63,7 @@ export async function PUT(request) {
         {
           method: "PUT",
           headers: {
-            "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_TOKEN,
+            "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
           },
         }
       );

@@ -19,7 +19,7 @@
 //       {
 //         method: "POST",
 //         headers: {
-//           "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_TOKEN,
+//           "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
 //           "Content-Type": "application/json",
 //         },
 //         body: JSON.stringify({
@@ -118,7 +118,7 @@ export async function POST(request) {
       {
         method: "POST",
         headers: {
-          "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_TOKEN,
+          "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

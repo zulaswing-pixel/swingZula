@@ -3,7 +3,7 @@ export async function POST(req) {
     const body = await req.json();
     const { email, shippingAddress, lineItems } = body;
 
-    const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ADMIN_TOKEN;
+    const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
     const SHOPIFY_STORE = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN;
 
     if (!SHOPIFY_ACCESS_TOKEN || !SHOPIFY_STORE) {

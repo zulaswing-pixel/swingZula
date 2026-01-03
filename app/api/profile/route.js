@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 
 const SHOPIFY_STORE =process.env.SHOPIFY_STORE_DOMAIN;
-const SHOPIFY_TOKEN = process.env.SHOPIFY_ADMIN_TOKEN; 
+const SHOPIFY_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN; 
 
 export async function POST(request) {
   const body = await request.json();

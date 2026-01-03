@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const SHOPIFY_STORE = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN || "hit-megascale.myshopify.com";
-const ACCESS_TOKEN = process.env.SHOPIFY_ADMIN_TOKEN || "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";
+const ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN || "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";
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);

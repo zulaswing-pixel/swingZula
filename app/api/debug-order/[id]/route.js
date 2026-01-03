@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const SHOPIFY_STORE = process.env.SHOPIFY_STORE_DOMAIN;
-const ACCESS_TOKEN =process.env.SHOPIFY_ADMIN_TOKEN;
+const ACCESS_TOKEN =process.env.SHOPIFY_ACCESS_TOKEN;
 
 export async function GET(request, { params }) {
   const { id } = params;

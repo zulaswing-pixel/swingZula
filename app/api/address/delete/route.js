@@ -22,7 +22,7 @@ export async function DELETE(request) {
       {
         method: "DELETE",
         headers: {
-          "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_TOKEN,
+          "X-Shopify-Access-Token": process.env.SHOPIFY_ACCESS_TOKEN,
         },
       }
     );
